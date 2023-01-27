@@ -1,2 +1,2 @@
-# odin-foundations-course
-Project: Landing Page
+# landing-page-project
+Odin Foundations Course
