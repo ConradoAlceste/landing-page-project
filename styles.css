@@ -10,10 +10,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 450px;
   background-color: #1F2937;
-  padding: 0 300px;
-  margin-bottom: 30px;
+  padding: 0 300px 100px;
+  margin-bottom: 50px;
 }
 
 .logo-and-links {
@@ -23,6 +22,15 @@ body {
   align-self: normal;
 }
 
+.links {
+  color: white;
+  text-decoration: none;
+}
+
+.links:hover {
+  text-decoration: underline;
+  }
+  
 .logo {
   display: flex;
   align-items: center;
@@ -44,25 +52,16 @@ body {
   gap: 20px;
 }
 
-.hero-image {
-  height: auto;
-  max-width: 100%;
-  padding-top: 1%;
-}
-
 img {
+  padding-top: 1%;
   height: auto;
   max-width: 100%;
 }
 
 .hero {
   display: flex;
-  /* justify-content: space-between;
-  align-items: center;
-  align-self: normal;
-  flex-grow: 0;
-  flex-shrink: 1;
-  flex-basis: 50%; */
+  margin-top: 80px;
+  margin-bottom: 30px;
 }
 
 .awesome {
@@ -71,7 +70,7 @@ img {
   align-items: flex-start;
   padding-right: 20px;
   flex: 1;
-  height: 100%;
+  height: auto;
   justify-content: space-between;
 }
 
@@ -91,13 +90,16 @@ img {
   color: rgba(229, 231, 235, 0.7);
 }
 
-.sign-up {
+.sign-up, .footer {
   background-color: #3882f6;
-  color: white;
+}
+
+.sign-up {
   border-radius: 5px;
   border: none;
   padding: 8px 25px;
   font-weight: bold;
+  font-size: 1.5em;
 }
 
 .informations {
@@ -125,18 +127,18 @@ img {
   gap: 80px;
   justify-content: center;
   padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .image-and-text {
   display: flex;
   flex-direction: column;
   width: 13%;
-  /* text-align: center; */
 }
 
 .image-and-text img {
   border: 4px solid #3882F6;
-    border-radius: 15px;
+  border-radius: 15px;
 }
 
 .image-and-text p {
@@ -161,4 +163,35 @@ img {
   text-align-last: end;
   padding-right: 50px;
   font-size: 28px;
+}
+
+.footer {
+  display: flex;
+  margin: 100px 200px;
+  padding: 80px 200px;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+#call-to-action {
+  color: white;
+  font-size: 32px;
+  margin: auto;
+}
+
+#sign-up-text{
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+#footer-button {
+  display: flex;
+}
+
+#footer-button .sign-up {
+  border: 2px solid;
+  margin: auto;
+  padding: 15px 80px;
+  border-radius: 8px;
 }
